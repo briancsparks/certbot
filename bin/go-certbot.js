@@ -29,7 +29,7 @@ async function main() {
   //console.log('params', {npxName, certbotName, auth_domain, domains, email});
   //console.log('params', {auth_domain, domains, email});
 
-  const out_dir       = path.join(os.homedir(), '.cdr0-net', 'certs');
+  const out_dir       = path.join(os.homedir(), '.go-certbot', 'certs');
   const config_dir    = path.join(out_dir, 'config');
   const work_dir      = path.join(out_dir, 'work');
   const logs_dir      = path.join(out_dir, 'logs');
@@ -84,10 +84,10 @@ async function main() {
     '--email',                email,
   ];
 
-  console.log('cli: ', command, args);
+  // console.log('cli: ', command, args);
 
   const result = await spawnIt(command, args);
-  console.log(result);
+  // console.log(result);
 
   return  result;
 }
