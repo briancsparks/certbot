@@ -1,24 +1,24 @@
 {
-  "name": "@cdr0/certbot",
+  "name": "@cdr0/go-certbot",
   "version": "1.0.0",
   "description": "A npx-able repo to invoke certbot to do its thing.",
   "main": "index.js",
   "bin": {
-    "certbot": "bin/certbot.js"
+    "go-certbot": "bin/go-certbot.js"
   },
   "scripts": {
     "test": "ava"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/briancsparks/certbot.git"
+    "url": "git+https://github.com/briancsparks/go-certbot.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/briancsparks/certbot/issues"
+    "url": "https://github.com/briancsparks/go-certbot/issues"
   },
-  "homepage": "https://github.com/briancsparks/certbot#readme",
+  "homepage": "https://github.com/briancsparks/go-certbot#readme",
   "dependencies": {
     "@cdr0/config": "^1.0.2",
     "@types/shelljs": "^0.8.8",
