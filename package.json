@@ -1,0 +1,33 @@
+{
+  "name": "@cdr0/certbot",
+  "version": "1.0.0",
+  "description": "A npx-able repo to invoke certbot to do its thing.",
+  "main": "index.js",
+  "bin": {
+    "certbot": "bin/certbot.js"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briancsparks/certbot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briancsparks/certbot/issues"
+  },
+  "homepage": "https://github.com/briancsparks/certbot#readme",
+  "dependencies": {
+    "@cdr0/config": "^1.0.2",
+    "@types/shelljs": "^0.8.8",
+    "aws-sdk": "^2.824.0",
+    "exit-on-epipe": "^1.0.1",
+    "loud-rejection": "^2.2.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
