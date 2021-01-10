@@ -26,7 +26,7 @@ async function main() {
   let domains         = argv.shift();   /* subdomain.example.com */
   let email           = argv.shift();   /* somebody@somewhere.com */
 
-  console.log('params', {npxName, certbotName, auth_domain, domains, email});
+  //console.log('params', {npxName, certbotName, auth_domain, domains, email});
   //console.log('params', {auth_domain, domains, email});
 
   const out_dir       = path.join(os.homedir(), '.cdr0-net', 'certs');
