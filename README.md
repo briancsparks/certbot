@@ -5,11 +5,24 @@ A npx-able repo to invoke certbot to do its thing.
 
 ## TL; DR
 
+Make sure you have a cert store at ~/.go-certbot. If not, fetch it:
+
+```shell
+mkdir -p "${HOME}/.go-certbot"
+aws s3 sync s3://z-cdr0-thinking/project/cdr0/front/le/go-certbot/ "${HOME}/.go-certbot/"
+```
+
 To create a cert for `my.example.com`:
 
 ```shell
 npx github:briancsparks/go-certbot example.com my.example.com me@example.com
 ls -l ~/.go-certbot/certs/config/live/my.example.com
+```
+
+Then push back to S3:
+
+```shell
+aws s3 sync "${HOME}/.go-certbot/" s3://z-cdr0-thinking/project/cdr0/front/le/go-certbot/
 ```
 
 ## Details
